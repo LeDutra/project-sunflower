@@ -1,13 +1,16 @@
-<%= form_with(model: [ @article, @article.comments.build ], local: true) do |form| %>
-  <p>
-    <%= form.label :commenter %><br>
-    <%= form.text_field :commenter %>
-  </p>
-  <p>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
+<%= form_with(model: [@article, @article.comments.build], local: true) do |form| %>
+
+<p class="col-sm-3">
+    <%= form.label :commenter, class: "form-label" %><br>
+    <%= form.text_field :commenter, class: "form-control" %>
+</p>
+
+<p class="col-sm-5">
+    <%= form.label :body, class: "form-label" %><br>
+    <%= form.text_area :body, class: "form-control", rows: "3" %>
+</p>
+<p class="col-auto">
+    <br />
+    <%= form.submit class: "btn btn-primary" %><br />
+</p>
 <% end %>

@@ -1,14 +1,11 @@
-<p>
-    <strong>Commenter:</strong>
-    <%= comment.commenter %>
-</p>
-<p>
-    <strong>Comment:</strong>
-    <%= comment.body %>
-</p>
-
-<p>
-    <%= link_to 'Destroy Comment', [comment.article, comment],
-                method: :delete,
-                data: { confirm: 'Are you sure?' } %>
-</p>
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title"><%= comment.commenter %> said:</h5>
+        <p class="card-text"><%= comment.body %></p>
+        <%= link_to "Delete", [comment.article, comment],
+                    class: "card-link",
+                    method: :delete,
+                    data: { confirm: "Are you sure?" } %>
+    </div>
+</div>
+<br />
