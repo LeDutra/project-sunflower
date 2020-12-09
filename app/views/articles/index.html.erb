@@ -1,4 +1,4 @@
-<h1>Listing Articles</h1>
+<h1>Listing Articles</h1><br>
 <table class="table table-bordered table-hover align-middle">
     <thead class="thead-dark">
         <tr>
@@ -12,20 +12,19 @@
     <tr>
         <td class="align-middle"><%= article.title %></td>
         <td class="align-middle"><%= article.text %></td>
-        <td><%= link_to 'Show', article_path(article),
-                    class: "btn btn-primary"
-                    %>
-            <%= link_to 'Edit', edit_article_path(article),
-                    class: "btn btn-primary"
-                    %>
-            <%= link_to 'Destroy', article_path(article),
-                    class: "btn btn-danger",
-                    method: :delete,
-                    data: { confirm: 'Are you sure?' } 
-                    %>
+        <td><%= link_to "Show", article_path(article),
+                        class: "btn btn-primary" %>
+                    <!--
+            <%= link_to "Edit", edit_article_path(article),
+                        class: "btn btn-primary" %>
+            <%= link_to "Destroy", article_path(article),
+                        class: "btn btn-danger",
+                        method: :delete,
+                        data: { confirm: "Are you sure?" } %>
+                    -->
         </td>
     </tr>
     <% end %>
 
 </table>
-<div><%= link_to 'New article', new_article_path, class: "btn btn-primary" %></div>
+<div><%= link_to "New article", new_article_path, class: "btn btn-primary" %></div>

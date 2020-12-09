@@ -1,2 +1,3 @@
 > make a better show articles that doesn't show the whole text, just the article title
 > make the text font from the body of the article smaller
+> uncomment index.html.erb edit and delete, show.html.erb edit, and _comment.html.erb
