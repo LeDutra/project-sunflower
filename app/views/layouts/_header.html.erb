@@ -19,21 +19,12 @@
     -->
     
     <span class="navbar-nav">
-      <% if user_signed_in? %>
-        <span class="nav-item">
-          <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link" %>
-        </span>
-        <span class="nav-item">
-          <%= link_to "Edit profile", edit_user_registration_path, class: "nav-link" %>
-        </span>
-      <% else %>
-        <span class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-        </span>
-        <span class="nav-item">
-          <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
-        </span>
-      <% end %>
+      <span class="nav-item">
+        <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+      </span>
+      <span class="nav-item">
+        <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
+      </span>
     </ul>
   </div>
 </nav>
