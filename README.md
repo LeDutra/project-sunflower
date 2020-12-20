@@ -1,24 +1,16 @@
-# README
+# Project Sunflower (WIP)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple Ruby on Rails implementation of a social network/blog for training purposes.
+Automatically deployed on: https://project-l-sunflower.herokuapp.com/
 
-Things you may want to cover:
+Built and running using:
 
-* Ruby version
+* Ruby 2.7.2
+* Rails 6.0.3.4
+* PostgreSQL 13.1-1
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Functions implemented:
+-
+* Basic CRUD blog and database
+* Commenting
+* Login database and functionality
